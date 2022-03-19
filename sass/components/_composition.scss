@@ -1,5 +1,6 @@
 .composition {
 	position: relative;
+	display: flex;
 
 	&__photo {
 		width: 55%;
@@ -11,7 +12,6 @@
 		outline-offset: 2rem;
 
 		@include respond(tab-port) {
-			float: left;
 			position: relative;
 			width: 33.333333%;
 			box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
