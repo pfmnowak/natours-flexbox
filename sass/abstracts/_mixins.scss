@@ -1,11 +1,3 @@
-@mixin clearfix {
-	&::after {
-		content: '';
-		display: table;
-		clear: both;
-	}
-}
-
 // Positioning an element in the center of parent element
 @mixin absCenter {
 	position: absolute;
