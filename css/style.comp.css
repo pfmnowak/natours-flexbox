@@ -36,6 +36,7 @@ ORDER: Base + typography > general layuout + grid > page layout > components
   /* box-sizing: border-box; */ }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%; }
   @media only screen and (min-width: 112.5em) {
     html {
@@ -628,10 +629,12 @@ body {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: flex;
-    overflow: scroll;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.4s 0.2s; }
+    @media only screen and (hover: none) {
+      .popup__content {
+        overflow: scroll; } }
     @media only screen and (max-width: 75em) {
       .popup__content {
         flex-direction: column; } }
@@ -654,7 +657,8 @@ body {
     padding: 3rem 5rem;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   .popup__img {
     display: block;
     width: 100%; }
