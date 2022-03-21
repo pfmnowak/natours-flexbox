@@ -14,6 +14,6 @@ Array.from(navLinks).forEach(link =>
 const popup = document.querySelector('.popup');
 popup.addEventListener('click', event => {
 	if (!event.target.closest('.popup__content')) {
-		window.location.replace('/#section-tours');
+		window.location.hash = '#section-tours';
 	}
 });
